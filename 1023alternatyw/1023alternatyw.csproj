@@ -74,7 +74,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CsvFile.cs" />
+    <Compile Include="CsvSerializer.cs" />
+    <Compile Include="Dane.cs" />
+    <Compile Include="Kombinacja.cs" />
     <Compile Include="Panel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +103,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="Ustawienia.cs" />
     <EmbeddedResource Include="Panel.resx">
       <DependentUpon>Panel.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,0 +1,16 @@
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\bin\Debug\1023alternatyw.exe.config
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\1023alternatyw.csprojResolveAssemblyReference.cache
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\_1023alternatyw.Panel.resources
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\_1023alternatyw.Eksperyment.resources
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\_1023alternatyw.Ankieta.resources
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\_1023alternatyw.Powitanie.resources
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\_1023alternatyw.Properties.Resources.resources
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\1023alternatyw.csproj.GenerateResource.Cache
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\bin\Debug\1023alternatyw.exe.manifest
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\bin\Debug\1023alternatyw.application
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\bin\Debug\1023alternatyw.exe
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\bin\Debug\1023alternatyw.pdb
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\1023alternatyw.exe.manifest
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\1023alternatyw.application
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\1023alternatyw.exe
+C:\Users\marek\Desktop\JNPIII\1023alternatyw\obj\Debug\1023alternatyw.pdb

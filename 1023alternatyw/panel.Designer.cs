@@ -32,19 +32,19 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.textBoxPodziekowanie = new System.Windows.Forms.TextBox();
+            this.textBoxPoTreningu = new System.Windows.Forms.TextBox();
+            this.textBoxPowitanie = new System.Windows.Forms.TextBox();
+            this.numericDlugoscSesjiTreningowej = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericIloscPowtorzenEksperymentu = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
-            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
+            this.domainSubtryb = new System.Windows.Forms.DomainUpDown();
+            this.domainTryb = new System.Windows.Forms.DomainUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericCzasZwloki = new System.Windows.Forms.NumericUpDown();
+            this.numericCzasLampy = new System.Windows.Forms.NumericUpDown();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -68,10 +68,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericDlugoscSesjiTreningowej)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericIloscPowtorzenEksperymentu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericCzasZwloki)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericCzasLampy)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,19 +81,19 @@
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.numericUpDown4);
+            this.panel1.Controls.Add(this.textBoxPodziekowanie);
+            this.panel1.Controls.Add(this.textBoxPoTreningu);
+            this.panel1.Controls.Add(this.textBoxPowitanie);
+            this.panel1.Controls.Add(this.numericDlugoscSesjiTreningowej);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.numericUpDown3);
+            this.panel1.Controls.Add(this.numericIloscPowtorzenEksperymentu);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.domainUpDown2);
-            this.panel1.Controls.Add(this.domainUpDown1);
+            this.panel1.Controls.Add(this.domainSubtryb);
+            this.panel1.Controls.Add(this.domainTryb);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.numericUpDown2);
-            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.numericCzasZwloki);
+            this.panel1.Controls.Add(this.numericCzasLampy);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label8);
@@ -137,37 +137,37 @@
             this.label15.TabIndex = 23;
             this.label15.Text = "Powitanie";
             // 
-            // textBox3
+            // textBoxPodziekowanie
             // 
-            this.textBox3.Location = new System.Drawing.Point(395, 490);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 81);
-            this.textBox3.TabIndex = 22;
+            this.textBoxPodziekowanie.Location = new System.Drawing.Point(395, 490);
+            this.textBoxPodziekowanie.Multiline = true;
+            this.textBoxPodziekowanie.Name = "textBoxPodziekowanie";
+            this.textBoxPodziekowanie.Size = new System.Drawing.Size(183, 81);
+            this.textBoxPodziekowanie.TabIndex = 22;
             // 
-            // textBox2
+            // textBoxPoTreningu
             // 
-            this.textBox2.Location = new System.Drawing.Point(206, 490);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 81);
-            this.textBox2.TabIndex = 21;
+            this.textBoxPoTreningu.Location = new System.Drawing.Point(206, 490);
+            this.textBoxPoTreningu.Multiline = true;
+            this.textBoxPoTreningu.Name = "textBoxPoTreningu";
+            this.textBoxPoTreningu.Size = new System.Drawing.Size(183, 81);
+            this.textBoxPoTreningu.TabIndex = 21;
             // 
-            // textBox1
+            // textBoxPowitanie
             // 
-            this.textBox1.Location = new System.Drawing.Point(17, 490);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 81);
-            this.textBox1.TabIndex = 20;
+            this.textBoxPowitanie.Location = new System.Drawing.Point(17, 490);
+            this.textBoxPowitanie.Multiline = true;
+            this.textBoxPowitanie.Name = "textBoxPowitanie";
+            this.textBoxPowitanie.Size = new System.Drawing.Size(183, 81);
+            this.textBoxPowitanie.TabIndex = 20;
             // 
-            // numericUpDown4
+            // numericDlugoscSesjiTreningowej
             // 
-            this.numericUpDown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown4.Location = new System.Drawing.Point(286, 348);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(174, 31);
-            this.numericUpDown4.TabIndex = 19;
+            this.numericDlugoscSesjiTreningowej.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericDlugoscSesjiTreningowej.Location = new System.Drawing.Point(286, 348);
+            this.numericDlugoscSesjiTreningowej.Name = "numericDlugoscSesjiTreningowej";
+            this.numericDlugoscSesjiTreningowej.Size = new System.Drawing.Size(174, 31);
+            this.numericDlugoscSesjiTreningowej.TabIndex = 19;
             // 
             // label12
             // 
@@ -179,13 +179,13 @@
             this.label12.TabIndex = 18;
             this.label12.Text = "Długość sesji trenigowej:";
             // 
-            // numericUpDown3
+            // numericIloscPowtorzenEksperymentu
             // 
-            this.numericUpDown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown3.Location = new System.Drawing.Point(286, 406);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(174, 31);
-            this.numericUpDown3.TabIndex = 17;
+            this.numericIloscPowtorzenEksperymentu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericIloscPowtorzenEksperymentu.Location = new System.Drawing.Point(286, 406);
+            this.numericIloscPowtorzenEksperymentu.Name = "numericIloscPowtorzenEksperymentu";
+            this.numericIloscPowtorzenEksperymentu.Size = new System.Drawing.Size(174, 31);
+            this.numericIloscPowtorzenEksperymentu.TabIndex = 17;
             // 
             // label11
             // 
@@ -197,27 +197,27 @@
             this.label11.TabIndex = 16;
             this.label11.Text = "Ilość powtórzeń eksperymentu:";
             // 
-            // domainUpDown2
+            // domainSubtryb
             // 
-            this.domainUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.domainUpDown2.Items.Add("Zwykły");
-            this.domainUpDown2.Items.Add("Zwłoczny");
-            this.domainUpDown2.Location = new System.Drawing.Point(284, 184);
-            this.domainUpDown2.Name = "domainUpDown2";
-            this.domainUpDown2.Size = new System.Drawing.Size(174, 31);
-            this.domainUpDown2.TabIndex = 15;
-            this.domainUpDown2.Text = "Wybierz";
+            this.domainSubtryb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.domainSubtryb.Items.Add("Zwykły");
+            this.domainSubtryb.Items.Add("Zwłoczny");
+            this.domainSubtryb.Location = new System.Drawing.Point(284, 184);
+            this.domainSubtryb.Name = "domainSubtryb";
+            this.domainSubtryb.Size = new System.Drawing.Size(174, 31);
+            this.domainSubtryb.TabIndex = 15;
+            this.domainSubtryb.Text = "Wybierz";
             // 
-            // domainUpDown1
+            // domainTryb
             // 
-            this.domainUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.domainUpDown1.Items.Add("Zwykły");
-            this.domainUpDown1.Items.Add("Sprzężenie zwrotne");
-            this.domainUpDown1.Location = new System.Drawing.Point(286, 131);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(174, 31);
-            this.domainUpDown1.TabIndex = 14;
-            this.domainUpDown1.Text = "Wybierz";
+            this.domainTryb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.domainTryb.Items.Add("Zwykły");
+            this.domainTryb.Items.Add("Sprzężenie zwrotne");
+            this.domainTryb.Location = new System.Drawing.Point(286, 131);
+            this.domainTryb.Name = "domainTryb";
+            this.domainTryb.Size = new System.Drawing.Size(174, 31);
+            this.domainTryb.TabIndex = 14;
+            this.domainTryb.Text = "Wybierz";
             // 
             // label10
             // 
@@ -239,22 +239,22 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "ms";
             // 
-            // numericUpDown2
+            // numericCzasZwloki
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(284, 294);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(174, 31);
-            this.numericUpDown2.TabIndex = 11;
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
+            this.numericCzasZwloki.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericCzasZwloki.Location = new System.Drawing.Point(284, 294);
+            this.numericCzasZwloki.Name = "numericCzasZwloki";
+            this.numericCzasZwloki.Size = new System.Drawing.Size(174, 31);
+            this.numericCzasZwloki.TabIndex = 11;
+            this.numericCzasZwloki.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
-            // numericUpDown1
+            // numericCzasLampy
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(284, 240);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(174, 31);
-            this.numericUpDown1.TabIndex = 10;
+            this.numericCzasLampy.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericCzasLampy.Location = new System.Drawing.Point(284, 240);
+            this.numericCzasLampy.Name = "numericCzasLampy";
+            this.numericCzasLampy.Size = new System.Drawing.Size(174, 31);
+            this.numericCzasLampy.TabIndex = 10;
             // 
             // button4
             // 
@@ -498,10 +498,10 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericDlugoscSesjiTreningowej)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericIloscPowtorzenEksperymentu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericCzasZwloki)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericCzasLampy)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -527,22 +527,22 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.DomainUpDown domainUpDown2;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
+        private System.Windows.Forms.NumericUpDown numericCzasZwloki;
+        private System.Windows.Forms.NumericUpDown numericCzasLampy;
+        private System.Windows.Forms.DomainUpDown domainSubtryb;
+        private System.Windows.Forms.DomainUpDown domainTryb;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown numericIloscPowtorzenEksperymentu;
+        private System.Windows.Forms.NumericUpDown numericDlugoscSesjiTreningowej;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPodziekowanie;
+        private System.Windows.Forms.TextBox textBoxPoTreningu;
+        private System.Windows.Forms.TextBox textBoxPowitanie;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;

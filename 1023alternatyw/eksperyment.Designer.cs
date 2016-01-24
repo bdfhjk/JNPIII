@@ -73,6 +73,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "START";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -323,6 +324,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.KeyPreview = true;
             this.Name = "Eksperyment";
             this.Text = "Form2";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyDown);

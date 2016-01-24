@@ -17,6 +17,7 @@ namespace _1023alternatyw
         public Powitanie()
         {
             InitializeComponent();
+            textBox1.Text = Singleton.ustawienia.powitanie;
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -34,13 +35,7 @@ namespace _1023alternatyw
 
         private void Powitanie_Shown(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.nickname != "")
-            {
-                eks = new Eksperyment();
-                eks.Show();
-                eks.FormClosing += (sa, ea) => Close();
-                Hide();
-            }
+
         }
     }
 }
