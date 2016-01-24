@@ -11,16 +11,28 @@ using System.Configuration;
 using System.Collections.Specialized;
 using System.IO;
 using Csv.Serialization;
+using System.Diagnostics;
+using System.Timers;
 
 namespace _1023alternatyw
 {
     public partial class Eksperyment : Form
     {
+        System.Timers.Timer timer;
+        Stopwatch sw;
         Panel form1;
         int next_to_show;
         bool[] zapalone;
         public Eksperyment()
         {
+            timer = new System.Timers.Timer();
+            sw = new Stopwatch();
+            if (Singleton.ustawienia.subtryb != 1)
+                timer.Interval = Singleton.ustawienia.czas_lampy;
+            else
+                timer.Interval = Singleton.ustawienia.czas_zwloki;
+
+            timer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
             zapalone = new bool[10];
             InitializeComponent();
             for(int i = 0; i < Singleton.merged.Count; i++)
@@ -30,12 +42,34 @@ namespace _1023alternatyw
                     next_to_show = i;
                     break;
                 }
-                if (Singleton.merged[next_to_show].treningowa)
-                    label2.Text = "Treningowa";
-                else
-                    label2.Text = "Właściwa";
             }
+            if (Singleton.merged[next_to_show].treningowa)
+                label2.Text = "Treningowa";
+            else
+                label2.Text = "Właściwa";
+
         }
+
+        public void OnTimedEvent(object source, ElapsedEventArgs e)
+        {
+            
+            Singleton.merged[next_to_show].czas = -1;
+            try
+            {
+                using (var stream = new FileStream("Kombinacje.csv", FileMode.Create, FileAccess.Write))
+                {
+                    var cs = new CsvSerializer<Kombinacja>()
+                    {
+                        UseTextQualifier = true,
+                    };
+                    cs.Serialize(stream, Singleton.merged);
+                }
+            }
+            catch (Exception sse) { }
+            next_to_show++;
+            zapal();
+        }
+
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -44,6 +78,44 @@ namespace _1023alternatyw
 
         private void Form2_KeyDown(object sender, KeyEventArgs e)
         {
+            if (Singleton.ustawienia.tryb == 1)
+            {
+                if (e.KeyCode == Keys.D1 && !zapalone[1]) { System.Media.SystemSounds.Beep.Play(); }
+                if (e.KeyCode == Keys.D2 && !zapalone[2]) { System.Media.SystemSounds.Beep.Play(); }
+                if (e.KeyCode == Keys.D3 && !zapalone[3]) { System.Media.SystemSounds.Beep.Play(); }
+                if (e.KeyCode == Keys.D4 && !zapalone[4]) { System.Media.SystemSounds.Beep.Play(); }
+                if (e.KeyCode == Keys.D5 && !zapalone[5]) { System.Media.SystemSounds.Beep.Play(); }
+                if (e.KeyCode == Keys.D6 && !zapalone[6]) { System.Media.SystemSounds.Beep.Play(); }
+                if (e.KeyCode == Keys.D7 && !zapalone[7]) { System.Media.SystemSounds.Beep.Play(); }
+                if (e.KeyCode == Keys.D8 && !zapalone[8]) { System.Media.SystemSounds.Beep.Play(); }
+                if (e.KeyCode == Keys.D9 && !zapalone[9]) { System.Media.SystemSounds.Beep.Play(); }
+                if (e.KeyCode == Keys.D0 && !zapalone[0]) { System.Media.SystemSounds.Beep.Play(); }
+            }
+
+            bool zmiana = false;
+
+            if (e.KeyCode == Keys.D1 && zapalone[1]) { zmiana = true; }
+            if (e.KeyCode == Keys.D2 && zapalone[2]) { zmiana = true; }
+            if (e.KeyCode == Keys.D3 && zapalone[3]) { zmiana = true; }
+            if (e.KeyCode == Keys.D4 && zapalone[4]) { zmiana = true; }
+            if (e.KeyCode == Keys.D5 && zapalone[5]) { zmiana = true; }
+            if (e.KeyCode == Keys.D6 && zapalone[6]) { zmiana = true; }
+            if (e.KeyCode == Keys.D7 && zapalone[7]) { zmiana = true; }
+            if (e.KeyCode == Keys.D8 && zapalone[8]) { zmiana = true; }
+            if (e.KeyCode == Keys.D9 && zapalone[9]) { zmiana = true; }
+            if (e.KeyCode == Keys.D0 && zapalone[0]) { zmiana = true; }
+
+            if (zmiana)
+            {
+                if (Singleton.ustawienia.subtryb == 1)
+                {
+                    timer.Stop();
+                    timer.Start();
+                }
+
+            }
+
+
             if (e.KeyCode == Keys.D1)
             { zapalone[1] = false; pictureBox1.Image = Properties.Resources.L11; }
             if (e.KeyCode == Keys.D2)
@@ -65,8 +137,6 @@ namespace _1023alternatyw
             if (e.KeyCode == Keys.D0)
             { zapalone[0] = false; pictureBox10.Image = Properties.Resources.L11; }
 
-            if (e.KeyCode == Keys.D1 && zapalone[1] && Singleton.ustawienia.tryb == 1) { /* Ding ding */}
-
             bool jest_zapalona = false;
             if (zapalone[1]) jest_zapalona = true;
             if (zapalone[2]) jest_zapalona = true;
@@ -81,7 +151,8 @@ namespace _1023alternatyw
 
             if (!jest_zapalona)
             {
-                Singleton.merged[next_to_show].czas = 42; //TODO
+                sw.Stop();
+                Singleton.merged[next_to_show].czas = (int)sw.ElapsedMilliseconds;
 
                 using (var stream = new FileStream("Kombinacje.csv", FileMode.Create, FileAccess.Write))
                 {
@@ -94,10 +165,13 @@ namespace _1023alternatyw
                 next_to_show++;
                 if (next_to_show >= Singleton.merged.Count)
                 {
-                    Close();
+                    MessageBox.Show(Singleton.ustawienia.podziekowanie);
+                    //Application.Exit();
                 }
                 zapal();
-            }
+                timer.Stop();
+                timer.Start();
+            } 
 
         }
 
@@ -149,27 +223,37 @@ namespace _1023alternatyw
             zapalone[9] = Singleton.merged[next_to_show].L9;
             zapalone[0] = Singleton.merged[next_to_show].L10;
 
-            pictureBox1.Refresh();
-            pictureBox2.Refresh();
-            pictureBox3.Refresh();
-            pictureBox4.Refresh();
-            pictureBox5.Refresh();
-            pictureBox6.Refresh();
-            pictureBox7.Refresh();
-            pictureBox8.Refresh();
-            pictureBox9.Refresh();
-            pictureBox10.Refresh();
+            //pictureBox1.Refresh();
+            //pictureBox2.Refresh();
+            //pictureBox3.Refresh();
+            //pictureBox4.Refresh();
+            //pictureBox5.Refresh();
+            //pictureBox6.Refresh();
+            //pictureBox7.Refresh();
+            //pictureBox8.Refresh();
+            //pictureBox9.Refresh();
+            //pictureBox10.Refresh();
 
             if (label2.Text == "Treningowa" && !Singleton.merged[next_to_show].treningowa)
             {
-                label2.Text = "Właściwa";
+                try {
+                    label2.Text = "Właściwa";
+                } catch (Exception e)
+                {
+
+                }
                 MessageBox.Show(Singleton.ustawienia.posesjitreningowej);
             }
+
+            sw.Reset();
+            sw.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             zapal();
+            timer.Start();
+            button1.Enabled = false;
         }
     }
 }

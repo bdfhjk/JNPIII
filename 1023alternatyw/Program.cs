@@ -31,6 +31,7 @@ namespace _1023alternatyw
 
                     deserializedData = cs.Deserialize(stream);
                 }
+                Singleton.ustawienia = deserializedData.ElementAt(0);
 
                 // Deserialization
                 IList<Kombinacja> deserializedData3 = null;

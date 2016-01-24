@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="1023alternatyw.exe" size="172000">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="1023alternatyw.exe" size="171488">
       <assemblyIdentity name="1023alternatyw" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/XDcHQ0503+dii2CaViz6AxYG4dtzxHjgnJ/YZMqu0c=</dsig:DigestValue>
+        <dsig:DigestValue>hkTYqmyyaKb2wfSX3Ab0dcq3if5gFY66ZZeiam2cQ1I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

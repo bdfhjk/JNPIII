@@ -22,9 +22,9 @@ namespace _1023alternatyw
             InitializeComponent();
             if (Singleton.dane != null)
             {
-                label21.Text = Singleton.dane.pseudonim;
-                label22.Text = Singleton.dane.wiek.ToString();
-                label23.Text = (Singleton.dane.plec == 1 ? "Mężczyzna" : "Kobieta");
+                //label21.Text = Singleton.dane.pseudonim;
+                //label22.Text = Singleton.dane.wiek.ToString();
+                //label23.Text = (Singleton.dane.plec == 1 ? "Mężczyzna" : "Kobieta");
             }
         }
 
@@ -71,7 +71,7 @@ namespace _1023alternatyw
             List<Kombinacja> trening = new List<Kombinacja>();
             List<Kombinacja>[] kombinacje = new List<Kombinacja>[Singleton.ustawienia.ilosc_powtorzen];
 
-            for (int i = 0; i < Singleton.ustawienia.dl_sesji_treningowej; i++)
+            for (int i = 1; i <= Singleton.ustawienia.dl_sesji_treningowej; i++)
             {
                 Kombinacja kombinacja = new Kombinacja();
                 kombinacja.czas = 0;
@@ -93,7 +93,7 @@ namespace _1023alternatyw
             for (int w = 0; w < Singleton.ustawienia.ilosc_powtorzen; w++)
             {
                 kombinacje[w] = new List<Kombinacja>();
-                for (int i = 0; i < 1023; i++)
+                for (int i = 1; i <= 1023; i++)
                 {
                     Kombinacja kombinacja = new Kombinacja();
                     kombinacja.czas = 0;

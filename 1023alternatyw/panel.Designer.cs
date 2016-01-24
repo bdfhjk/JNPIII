@@ -53,20 +53,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericDlugoscSesjiTreningowej)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericIloscPowtorzenEksperymentu)).BeginInit();
@@ -78,6 +69,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label15);
@@ -165,9 +157,19 @@
             // 
             this.numericDlugoscSesjiTreningowej.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericDlugoscSesjiTreningowej.Location = new System.Drawing.Point(286, 348);
+            this.numericDlugoscSesjiTreningowej.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericDlugoscSesjiTreningowej.Name = "numericDlugoscSesjiTreningowej";
             this.numericDlugoscSesjiTreningowej.Size = new System.Drawing.Size(174, 31);
             this.numericDlugoscSesjiTreningowej.TabIndex = 19;
+            this.numericDlugoscSesjiTreningowej.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label12
             // 
@@ -183,9 +185,19 @@
             // 
             this.numericIloscPowtorzenEksperymentu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericIloscPowtorzenEksperymentu.Location = new System.Drawing.Point(286, 406);
+            this.numericIloscPowtorzenEksperymentu.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericIloscPowtorzenEksperymentu.Name = "numericIloscPowtorzenEksperymentu";
             this.numericIloscPowtorzenEksperymentu.Size = new System.Drawing.Size(174, 31);
             this.numericIloscPowtorzenEksperymentu.TabIndex = 17;
+            this.numericIloscPowtorzenEksperymentu.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label11
             // 
@@ -243,18 +255,48 @@
             // 
             this.numericCzasZwloki.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericCzasZwloki.Location = new System.Drawing.Point(284, 294);
+            this.numericCzasZwloki.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericCzasZwloki.Minimum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.numericCzasZwloki.Name = "numericCzasZwloki";
             this.numericCzasZwloki.Size = new System.Drawing.Size(174, 31);
             this.numericCzasZwloki.TabIndex = 11;
+            this.numericCzasZwloki.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.numericCzasZwloki.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // numericCzasLampy
             // 
             this.numericCzasLampy.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericCzasLampy.Location = new System.Drawing.Point(284, 240);
+            this.numericCzasLampy.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericCzasLampy.Minimum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.numericCzasLampy.Name = "numericCzasLampy";
             this.numericCzasLampy.Size = new System.Drawing.Size(174, 31);
             this.numericCzasLampy.TabIndex = 10;
+            this.numericCzasLampy.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             // 
             // button4
             // 
@@ -332,105 +374,12 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(12, 86);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(407, 789);
             this.panel2.TabIndex = 1;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(158, 201);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(20, 24);
-            this.label23.TabIndex = 12;
-            this.label23.Text = "5";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(158, 154);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(20, 24);
-            this.label22.TabIndex = 11;
-            this.label22.Text = "5";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(158, 111);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(20, 24);
-            this.label21.TabIndex = 10;
-            this.label21.Text = "5";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(21, 201);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(56, 24);
-            this.label20.TabIndex = 9;
-            this.label20.Text = "Płeć:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(21, 154);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(57, 24);
-            this.label19.TabIndex = 8;
-            this.label19.Text = "Wiek:";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(21, 111);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(111, 24);
-            this.label18.TabIndex = 7;
-            this.label18.Text = "Pseudonim:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(316, 66);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(20, 24);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "5";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(19, 66);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(276, 24);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Ilość wylosowanych kombinacji:";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // button3
             // 
@@ -453,28 +402,6 @@
             this.button2.Text = "Eksportuj dane";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(316, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "5";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ukończone sesje:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -485,6 +412,16 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Panel eksperymentatora";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(75, 379);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 16);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Ilość kombinacji";
             // 
             // Panel
             // 
@@ -503,7 +440,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericCzasZwloki)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericCzasLampy)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -514,8 +450,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -535,21 +469,14 @@
         private System.Windows.Forms.NumericUpDown numericIloscPowtorzenEksperymentu;
         private System.Windows.Forms.NumericUpDown numericDlugoscSesjiTreningowej;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBoxPodziekowanie;
         private System.Windows.Forms.TextBox textBoxPoTreningu;
         private System.Windows.Forms.TextBox textBoxPowitanie;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
